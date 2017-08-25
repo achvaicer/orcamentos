@@ -5,12 +5,6 @@ red=`tput setaf 1`
 green=`tput setaf 2`
 reset=`tput sgr0`
 
-echo "${green}>>> Cloning repo...${reset}"
-git clone https://github.com/rg3915/orcamentos.git
-
-echo "${green}>>> Enter in orcamentos directory.${reset}"
-cd orcamentos
-
 echo "${green}>>> Creating virtualenv...${reset}"
 python -m venv .venv
 echo "${green}>>> venv is created.${reset}"
