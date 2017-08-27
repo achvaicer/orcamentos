@@ -1,8 +1,21 @@
+# -*- coding: utf-8 -*-
+
 import itertools
 from django.db.models import Q
 from orcamentos.crm.models import Person, Customer
 from orcamentos.proposal.models import Entry, Proposal, Contract, Work
-from orcamentos.utils.lists import URGENTE
+#from orcamentos.utils.lists import URGENTE
+
+URGENTE = 'a1'
+ALTA = 'a2'
+NORMAL = 'a3'
+BAIXA = 'a4'
+PRIORITY = (
+    (URGENTE, 'Urgente'),
+    (ALTA, 'Alta'),
+    (NORMAL, 'Normal'),
+    (BAIXA, 'Baixa'),
+)
 
 
 class FirstnameSearchMixin(object):

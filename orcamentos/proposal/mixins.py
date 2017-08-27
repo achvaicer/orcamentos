@@ -1,9 +1,11 @@
+# -*- coding: utf-8 -*-
+
 from datetime import datetime
 from django.db.models import Q
 from django.core.exceptions import ObjectDoesNotExist
 from .models import Entry, Proposal, Contract, Work
 from .forms import PrioritySearchForm, StatusSearchForm
-from orcamentos.utils.lists import PRIORITY, URGENTE, ALTA, NORMAL, BAIXA, STATUS_FILTER
+#from orcamentos.utils.lists import PRIORITY, URGENTE, ALTA, NORMAL, BAIXA, STATUS_FILTER
 
 
 class EntryMixin(object):
